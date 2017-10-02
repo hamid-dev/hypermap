@@ -13,15 +13,15 @@ menuButton.addEventListener('click', (event) => {
 
 function showHideSideNav(show){
     let sideNav = document.getElementsByClassName('side-nav')[0];
-    let sideHeader = document.getElementsByClassName('site-header')[0];
+    let container = document.getElementsByClassName('container')[0];
 
     if (show) {
         sideNav.style.width = "200px";
-        sideHeader.style.marginLeft="200px";  
+        container.style.marginLeft="200px";  
         menuButton.style.display = 'none';
     }
     else {
-        sideHeader.style.marginLeft="0";
+        container.style.marginLeft="0";
         sideNav.style.width = "0";  
         menuButton.style.display = 'inline';
     }
