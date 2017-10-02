@@ -3,6 +3,7 @@
     margin: 0px;
     box-sizing: border-box;
 }
+
 .site-header{
     background-color: #000;
     color: #fff;
@@ -12,13 +13,11 @@
     font-weight: bold;
     position: relative;
 }
+
 .menu-button{
-    display: block;
-    position: absolute;
-    top:50%;
-    left: 10px;
-    transform: translateY(-50%);
+    float: left;
 }
+
 .menu-button:hover{
     cursor: pointer;
 }
