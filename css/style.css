@@ -26,17 +26,26 @@
     cursor: pointer;
 }
 
+.container{
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+}
+
+main{
+    padding: 20px;
+}
 .side-nav{
     width: 0px;
     position: fixed;
     height: 100%;
     top:0;
     background-color: #000;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    transition: 0.5s;
     overflow-x: hidden;
     padding-top: 60px;
+    -webkit-transition:  0.5s;
+    -moz-transition:  0.5s;
+    transition:  0.5s;
 }
 
 .menu-list{
