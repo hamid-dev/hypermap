@@ -14,10 +14,28 @@
     position: relative;
 }
 
-.menu-button{
+.nav-button{
     float: left;
 }
 
-.menu-button:hover{
+.nav-button:hover{
+    cursor: pointer;
+}
+
+.side-nav{
+    list-style-type: none;
+    width: 100px;
+}
+
+.menu-item{
+    padding: 10px;
+    display: block;
+    background-color: #000;
+    color: white;
+    /* border: 1px solid white; */
+}
+
+.menu-item:hover{
+    background-color: #545FEB;
     cursor: pointer;
 }
