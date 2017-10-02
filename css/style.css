@@ -19,6 +19,7 @@
 
 .nav-button{
     float: left;
+    transition: 0.5s;
 }
 
 .nav-button:hover{
@@ -51,6 +52,23 @@
 }
 
 .menu-item:hover{
+    color: white;
+    cursor: pointer;
+}
+
+#close-btn{
+    font-size: 36px;
+    color:  #818181;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    -webkit-transition:  0.5s;
+    -moz-transition:  0.5s;
+    transition:  0.5s;
+}
+
+#close-btn:hover{
     color: white;
     cursor: pointer;
 }
