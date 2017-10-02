@@ -18,14 +18,14 @@ function showHideSideNav(show){
     if (show) {
         sideNav.style.width = "200px";
         container.style.marginLeft="200px";  
-        menuButton.style.transform = 'translateX(-50px)';
+        menuButton.style.transform = 'scale(0,0)';
         //menuButton.style.display = 'none';
 
     }
     else {
         container.style.marginLeft="0";
         sideNav.style.width = "0";  
-        menuButton.style.transform = 'translateX(0px)';
+        menuButton.style.transform = 'scale(1,1)';
         //menuButton.style.display = 'inline';
     }
 }
