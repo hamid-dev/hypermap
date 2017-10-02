@@ -18,11 +18,13 @@ function showHideSideNav(show){
     if (show) {
         sideNav.style.width = "200px";
         sideHeader.style.marginLeft="200px";  
-        menuButton.style.display = 'none';
+        menuButton.style.transform = 'translateX(-50px)';
+        //menuButton.style.display = 'none';
     }
     else {
         sideHeader.style.marginLeft="0";
         sideNav.style.width = "0";  
-        menuButton.style.display = 'inline';
+        menuButton.style.transform = 'translateX(0px)';
+        //menuButton.style.display = 'inline';
     }
 }
