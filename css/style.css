@@ -12,6 +12,9 @@
     font-size: 24px;
     font-weight: bold;
     position: relative;
+    -webkit-transition: margin-left 0.5s;
+    -moz-transition: margin-left 0.5s;
+    transition: margin-left 0.5s;
 }
 
 .nav-button{
@@ -23,8 +26,16 @@
 }
 
 .side-nav{
-    width: 100px;
-    display: none;
+    width: 0px;
+    position: fixed;
+    height: 100%;
+    top:0;
+    background-color: #000;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+    overflow-x: hidden;
+    padding-top: 60px;
 }
 
 .menu-list{
@@ -34,11 +45,12 @@
     padding: 10px;
     display: block;
     background-color: #000;
-    color: white;
-    /* border: 1px solid white; */
+    color: #818181;
+    font-size: 24px;
+    transition: 0.5s;
 }
 
 .menu-item:hover{
-    background-color: #545FEB;
+    color: white;
     cursor: pointer;
 }

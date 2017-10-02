@@ -4,11 +4,15 @@ menuButton.addEventListener('click', (evt) => {
     evt = evt || window.event;
 
     let sideNav = document.getElementsByClassName('side-nav')[0];
-    if(sideNav.style.display == 'none'){
-        sideNav.style.display = 'block';
+    let sideHeader = document.getElementsByClassName('site-header')[0];
+
+    if (!sideNav.style.width || sideNav.style.width === '0px') {
+        sideNav.style.width = "200px";
+        sideHeader.style.marginLeft="200px";      
     }
-    else{
-        sideNav.style.display = 'none';
+    else {
+        sideHeader.style.marginLeft="0";
+        sideNav.style.width = "0";  
     }
 
 });
